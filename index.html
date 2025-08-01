@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursed Movie Recommender - The Opposite of What You Like</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="main-title">🎬 Cursed Movie Recommender 🎬</h1>
+            <p class="subtitle">Finding movies you'll probably hate since 2025</p>
+        </header>
+
+        <main>
+            <!-- API Key Section -->
+            <section id="apiKeySection" class="api-key-section">
+                <h2>🔑 TMDB API Setup</h2>
+                <p class="instruction">Get your free API key from <a href="https://www.themoviedb.org/settings/api" target="_blank">TMDB</a> to unlock thousands of movies!</p>
+                <div class="api-input">
+                    <input type="text" id="apiKeyInput" placeholder="Enter your TMDB API key" class="api-key-input">
+                    <button id="loadMoviesBtn" class="btn btn-primary">Load Movies</button>
+                </div>
+                <p class="api-hint">Don't have an API key? <a href="https://www.themoviedb.org/settings/api" target="_blank">Get one here</a> (it's free!)</p>
+            </section>
+
+            <!-- Movie Selection Section -->
+            <section id="movieSelectionSection" class="movie-selection" style="display: none;">
+                <h2>Select Movies You Actually Like (We'll Use This Against You)</h2>
+                <p class="instruction">Check the movies you enjoy. We'll analyze your taste and recommend the opposite!</p>
+                
+                <!-- Search Section -->
+                <div class="search-section">
+                    <input type="text" id="searchInput" placeholder="Search for movies..." class="search-input">
+                    <button id="searchBtn" class="btn btn-secondary">Search</button>
+                    <button id="loadMoreBtn" class="btn btn-secondary">Load More Movies</button>
+                </div>
+                
+                <div class="controls">
+                    <button id="selectAllBtn" class="btn btn-secondary">Select All</button>
+                    <button id="clearAllBtn" class="btn btn-secondary">Clear All</button>
+                    <span class="selection-count">Selected: <span id="selectedCount">0</span></span>
+                </div>
+
+                <div id="movieGrid" class="movie-grid">
+                    <!-- Movies will be populated by JavaScript -->
+                </div>
+
+                <div class="recommendation-controls">
+                    <button id="getRecommendationsBtn" class="btn btn-primary" disabled>
+                        🚫 Get Cursed Recommendations 🚫
+                    </button>
+                    <p class="hint">Select at least 3 movies to unlock the curse!</p>
+                </div>
+            </section>
+
+            <!-- Recommendations Section -->
+            <section id="recommendationsSection" class="recommendations-section" style="display: none;">
+                <h2>🎭 You Probably Won't Like These! 🎭</h2>
+                <p class="curse-explanation">Based on your terrible taste, here are movies from genres you clearly avoid:</p>
+                
+                <div id="recommendationsGrid" class="recommendations-grid">
+                    <!-- Recommendations will be populated by JavaScript -->
+                </div>
+
+                <div class="curse-stats">
+                    <h3>Your Cursed Profile:</h3>
+                    <div id="curseStats" class="stats-container">
+                        <!-- Stats will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>⚠️ Warning: These recommendations are intentionally terrible. Watch at your own risk! ⚠️</p>
+        </footer>
+    </div>
+
+    <script src="tmdb-api.js"></script>
+    <script src="movies.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
