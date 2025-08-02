@@ -36,10 +36,10 @@ For Software:
 ![Screenshot1](https://github.com/666Lynx/cursed-movie-recommendation/blob/main/1.png)
 *Screenshot of the website*
 
-![Screenshot2](https://github.com/666Lynx/cursed-movie-recommendation/blob/main/1.png)
+![Screenshot2](https://github.com/666Lynx/cursed-movie-recommendation/blob/main/2.png)
 *Screenshot of the reccomended films after selecting Liked films*
 
-![Screenshot3](https://github.com/666Lynx/cursed-movie-recommendation/blob/main/1.png)
+![Screenshot3](https://github.com/666Lynx/cursed-movie-recommendation/blob/main/3.png)
 *Working of the Search function*
 
 ## Video
@@ -48,3 +48,4 @@ https://drive.google.com/file/d/1xc_mQzPurRyG0g32N949ODcdfQLYCkR1/view?usp=drive
 
 - This website requires user to input their tmdb api key.
 - it recommends some movies you're likely to hate after you've selected the movies you've liked
+
